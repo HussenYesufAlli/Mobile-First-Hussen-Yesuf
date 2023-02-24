@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #36b37e;
+  --secondary-color: #172b4d;
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+  --tertiary-font: "Inter", sans-serif;
+  --skills-list-bg: #ebf0ee;
+  --skills-list-color: #3a4a42;
+  --p-text-color: #42526e;
+}
+
 .main-container {
   display: flex;
   position: absolute;
@@ -5,44 +20,40 @@
   height: 718px;
   top: 1px;
   align-content: space-between;
-  background: #ffffff;
+  background: #fff;
 }
+
 /* shapes --- ellips and regtangles */
 .bg-shapes {
-    background-image: url(img/shapes.png);
-    position: absolute;
-    width: 462px;
-    height: 587.15px;
-    top: 104px;
-    margin: 0 auto;
-    /* border: 1px solid #CBCDFF */
-
+  background-image: url(img/shapes.png);
+  position: absolute;
+  width: 462px;
+  height: 587.15px;
+  top: 104px;
+  margin: 0 auto;
 }
 
-/* top bar section*/
-top-bar {
+/* top bar section */
+.top-bar {
   position: absolute;
   width: 375px;
   height: 92px;
-  left: 0px;
-  top: 0px;
-
+  left: 0;
+  top: 0;
 }
 
 /* my logo and three dashs */
 .tool-bar {
   position: absolute;
-  left: 0px;
-  right: 0px;
+  left: 0;
+  right: 0;
   top: 44px;
-  bottom: 0px;
+  bottom: 0;
   height: 48px;
   width: 375px;
-  left: 0px;
-  top: 44px;
-  border-radius: 0px;
-
+  border-radius: 0;
 }
+
 .dash-setting {
   display: flex;
   flex-direction: row;
@@ -52,7 +63,7 @@ top-bar {
   width: 40px;
   height: 40px;
   right: 24px;
-  top: calc(50% - 40px/2);
+  top: calc(50% - 40px / 2);
   border-radius: 8px;
 }
 
@@ -62,171 +73,127 @@ top-bar {
   flex: none;
   order: 0;
   flex-grow: 0;
- 
 }
+
 .icon-Union {
-    position: absolute;
-    width: 18px;
-    height: 12px;
-    left: 3px;
-    top: 6px;
-/* background: #6070FF; */
-    
+  position: absolute;
+  width: 18px;
+  height: 12px;
+  left: 3px;
+  top: 6px;
+
+  /* background: #6070FF; */
 }
 
 /* where the Logo Placed */
+
 .logo-setting {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: absolute;
-    width: 100px;
-    height: 40px;
-    left: 12px;
-    top: calc(50% - 40px/2);
-
-    border-radius: 0px;
-    padding: 10px 12px 10px 12px;
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  left: 12px;
+  top: calc(50% - 40px / 2);
+  border-radius: 0;
+  padding: 10px 12px 10px 12px;
 }
-
 
 /* My Logo */
+
 .logo {
-    width: 76px;
-    height: 20px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #6070FF;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  width: 76px;
+  height: 20px;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #6070ff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-/* /* Headline */ */
+/* /* Headline */
 
 .content-section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 114px 24px 114px 24px;
-    gap: 12px;
-    position: absolute;
-    width: 375px;
-    height: 604px;
-    left: calc(50% - 375px/2);
-    top: 92px; 
-} 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 114px 24px 114px 24px;
+  gap: 12px;
+  position: absolute;
+  width: 375px;
+  height: 604px;
+  left: calc(50% - 375px / 2);
+  top: 92px;
+}
 
 /* h2 text/Primary Text/personal introduction */
+
 .text-1 {
-    width: 327px;
-    height: 150px;
-    margin-top: 100px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    display: flex;
-    align-items: center;
-    color: #172B4D;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  width: 327px;
+  height: 150px;
+  margin-top: 100px;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-   /* praragraph/Primary Text/ personal description  */
+/* praragraph/Primary Text/ personal description  */
+
 .text-2 {
-    width: 327px;
-    height: 146px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #344563;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+  width: 327px;
+  height: 146px;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
+
 /* social media icons */
+
 .social-media-icons {
-    width: 170.17px;
-    height: 20px;
-    left: 24px;
-    margin-top: 10px;
-    border-radius: 0px;
-    flex: none;
-    order: 3;
-    flex-grow: 0;
-    }
-    
-     /* LET’S CONNECT text*/
-    .lets-connect {
-        width: 517px;
-        height: 24px;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        color: #7F8CFF;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-    }
+  width: 170.17px;
+  height: 20px;
+  left: 24px;
+  margin-top: 10px;
+  border-radius: 0;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
 
-/* .social-media-setting { */
-/* Auto layout */
+/* LET’S CONNECT text */
 
-/* display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 16px;
-
-width: 117px;
-height: 24px; */
-
-
-/* Inside auto layout */
-/* 
-flex: none;
-order: 2;
-flex-grow: 0;
-} */
-
-/* .social-media-title { */
-/* Auto layout */
-/* flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 8px;
-
-width: 317px;
-height: 24px;
-left: 24px;
-top: 470px;
-border-radius: 0px;
-
-
-
-
-flex: none;
-order: 0;
-flex-grow: 0;
-} 
-/////////////////////////
-*/
-
-
-
-
-
+.lets-connect {
+  width: 517px;
+  height: 24px;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
